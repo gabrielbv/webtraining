@@ -1,19 +1,24 @@
 <!-- 
 
 
-Positioning your button
+Adding the link
 
-Nice work! Now we'll work on centering your button on the page.
+Great! Now we want to add a link with text to our button.
 
-We'll go over positioning in the next course or two, but we think it's a good idea to give you a preview here. Here's how it works:
+In our example back in the first exercise, you may have noticed that we used <span></span> tags to create a different font color for "Facebook!", like so:
 
-    margin: auto; is the CSS you use to tell the browser: "Hey! Make sure to set equal margins on each side of this HTML element." When the margins are equal, the object is centered.
-    text-align: center; is how you center text elements.
+<a>Friend us on <span>Facebook!</span></a>
 
+You can do this too, if you like, but it's not required.
 Instructions
 
-On the CSS tab, set your div's margin to auto and its text-align property to center.
+On the HTML tab:
 
+Add a link (using <a></a> tags) between your <div></div> tags. You can set its href attribute to go to any website, and you can make the link text itself say whatever you want!
+
+On the CSS tab:
+
+Set your link's text-decoration to "none". Give it whatever color or font type you like!
 
  -->
 <!DOCTYPE html>
@@ -26,7 +31,7 @@ On the CSS tab, set your div's margin to auto and its text-align property to cen
 		<img src="http://bit.ly/NnVbxt"/>
 		<p>We're Codecademy! We're here to help you learn to code.</p><br/><br/>
 		<div>
-			
+		    <a href="http://facebook.com/gabriel.dianu">Friend us on <span>Facebook!</span></a>	
 		</div>
 	</body>
 </html>
