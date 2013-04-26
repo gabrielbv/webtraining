@@ -19,5 +19,8 @@ div {
     border:2px dashed #ff0000;
 }
 #best_friend{
+    border:4px solid #00c957;
 }
-#archnemesis{}
+#archnemesis{
+    border:4px solid #cc0000;
+    }
