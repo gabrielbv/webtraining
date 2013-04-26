@@ -10,11 +10,11 @@ div {
     
 }
 .friend{
-    background-color:green;
+    border:2px dashed #008000;
 }
 .family{
-    background-color:blue;
+    border:2px dashed #0000ff;
 }
 .enemy{
-    background-color:red;
+    border:2px dashed #ff0000;
 }
