@@ -7,5 +7,14 @@ div {
     width:100px;
     border-radius:100%;
     border:2px black solid
-
+    
+}
+.friend{
+    background-color:green;
+}
+.family{
+    background-color:blue;
+}
+.enemy{
+    background-color:red;
 }
