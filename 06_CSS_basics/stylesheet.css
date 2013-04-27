@@ -3,6 +3,8 @@
     height:50px;
     width:50px;
     background-color:blue;
+    position:fixed;
+    z-index:1;
     }
 .left{
     border-radius:5px;
