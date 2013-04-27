@@ -1,12 +1,27 @@
 #header{
     border-radius:5px;
+    height:50px;
+    width:50px;
+    background-color:blue;
     }
 .left{
     border-radius:5px;
+     border-radius:5px;
+    height:50px;
+    width:50px;
+    background-color:red;
 }
 .right{
     border-radius:5px;
+     border-radius:5px;
+    height:50px;
+    width:50px;
+    background-color:pink;
 }
 #footer{
     border-radius:5px;
+     border-radius:5px;
+    height:50px;
+    width:50px;
+    background-color:green;
 }
