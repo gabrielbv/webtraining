@@ -1,19 +1,12 @@
-/*Old enough to play?
+/*Adding some story
 
-With great programming powers, comes great responsibility. We should check if the user is old enough to play!
+You have to set the scene for your story. I've written up a short little introduction you can use for now. Under all your previous code, print out the following introduction:
 
-This involves two bits of code.
-
-    Using prompt to ask the user for their age. You can do it like this: var age = prompt("What's your age?"); and the variable age will hold the user's response.
-    Writing an if / else statement based on the age of the user.
-
-Note: we have to store the result of the prompt in a variable! Otherwise, we can't make use of it in the if / else statement.
+Snow White and Batman were hanging out at the bus stop, waiting to go to the shops. There was a sale on and both needed some new threads. You've never really liked Batman. You walk up to him.
 Instructions
 
-    Under the existing code, declare a variable age.
-    Make age equal to the answer you prompt the user to give (ie. ask the user 'how old are you?')
-    If the user is less than 18, use console.log and tell them they're allowed to play but you take no responsibility.
-    Else, use console.log and give them an encouraging message to play on!
+    Print the introduction using console.log
+    The introduction is full of words. Words are called 'strings' in JavaScript. Don't forget how to properly use strings!
 
 
 */
@@ -30,3 +23,6 @@ else
 {
     console.log("Great! let's play")
 }
+console.log("Snow White and Batman were hanging out at the bus stop, waiting to go to 
+	the shops. There was a sale on and both needed some new threads. You've never really
+	 liked Batman. You walk up to him. ")
