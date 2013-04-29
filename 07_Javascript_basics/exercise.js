@@ -1,12 +1,13 @@
-/*Adding some story
+/*
 
-You have to set the scene for your story. I've written up a short little introduction you can use for now. Under all your previous code, print out the following introduction:
+First move!
 
-Snow White and Batman were hanging out at the bus stop, waiting to go to the shops. There was a sale on and both needed some new threads. You've never really liked Batman. You walk up to him.
+So your story is really moving along! There is a scene. Your user is about to talk to Batman. You want to see if your user is ready to smackdown with Batman.
 Instructions
 
-    Print the introduction using console.log
-    The introduction is full of words. Words are called 'strings' in JavaScript. Don't forget how to properly use strings!
+    Under your existing code, print out the storyline: "Batman glares at you."
+    Then declare a variable userAnswer. Make it equal a prompt that asks the user "Are you feeling lucky, punk?". This will be the question that Batman asks your user.
+
 
 
 */
@@ -23,6 +24,7 @@ else
 {
     console.log("Great! let's play")
 }
-console.log("Snow White and Batman were hanging out at the bus stop, waiting to go to 
-	the shops. There was a sale on and both needed some new threads. You've never really
-	 liked Batman. You walk up to him. ")
+console.log("Snow White and Batman were hanging out at the bus stop, waiting to go to the shops. There was a sale on and both needed some new threads. You've never really liked Batman. You walk up to him. ")
+console.log("Batman glares at you.")
+
+var userAnswer=prompt("Are you feeling lucky,punk?");
