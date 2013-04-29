@@ -1,14 +1,17 @@
 /*
 
-First move!
+The story heats up!
 
-So your story is really moving along! There is a scene. Your user is about to talk to Batman. You want to see if your user is ready to smackdown with Batman.
+Now you have to create different scenarios. Good thing we know how to do that using if / else statements.
+
+If userAnswer is "yes" and they are feeling lucky, print out: "Batman hits you very hard. It's Batman and you're you! Of course Batman wins!"
+
+Otherwise, print out: "You did not say yes to feeling lucky. Good choice! You are a winner in the game of not getting beaten up by Batman."
+
+Remember: = is for assignment, and === is to check if things are equal!
 Instructions
 
-    Under your existing code, print out the storyline: "Batman glares at you."
-    Then declare a variable userAnswer. Make it equal a prompt that asks the user "Are you feeling lucky, punk?". This will be the question that Batman asks your user.
-
-
+Use an if / else statement to write out the last part of this game!
 
 */
 // Check if the user is ready to play!
@@ -28,3 +31,12 @@ console.log("Snow White and Batman were hanging out at the bus stop, waiting to 
 console.log("Batman glares at you.")
 
 var userAnswer=prompt("Are you feeling lucky,punk?");
+
+if(userAnswer === "yes")
+{
+    console.log("Batman hits you very hard. It's Batman and you're you!Of course Batman wins")
+}
+else
+{
+    console.log("You did not say yes to feeling lucky. Good choice! You are a winner in the game of not getting beaten up by Batman.")
+}
