@@ -1,19 +1,18 @@
 /*
 
-The story heats up!
+Asking for feedback
 
-Now you have to create different scenarios. Good thing we know how to do that using if / else statements.
-
-If userAnswer is "yes" and they are feeling lucky, print out: "Batman hits you very hard. It's Batman and you're you! Of course Batman wins!"
-
-Otherwise, print out: "You did not say yes to feeling lucky. Good choice! You are a winner in the game of not getting beaten up by Batman."
-
-Remember: = is for assignment, and === is to check if things are equal!
+It is worthwhile asking your user for feedback! Create a variable called feedback and prompt the user to rate your game out of 10.
 Instructions
 
-Use an if / else statement to write out the last part of this game!
+If the score is greater than 8, print out: "This is just the beginning of my game empire. Stay tuned for more!"
+
+Otherwise, print out:
+"I slaved away at this game and you gave me that score?! The nerve! Just you wait!"
+
 
 */
+// Check if the user is ready to play!
 // Check if the user is ready to play!
 confirm("I am ready to play!");
 
@@ -39,4 +38,13 @@ if(userAnswer === "yes")
 else
 {
     console.log("You did not say yes to feeling lucky. Good choice! You are a winner in the game of not getting beaten up by Batman.")
+}
+var feedback=prompt("Rate me pls");
+if(feedback>8)
+{
+    console.log("This is just the beginning of my game empire. Stay tuned for more!")
+}
+else
+{
+    console.log("I slaved away at this game and you gave me that score?! The nerve! Just you wait!")
 }
