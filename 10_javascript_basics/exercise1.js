@@ -1,26 +1,21 @@
 /*
 
-Declare your variables
+The 'while' loop
 
-All right! Let's start by declaring the variables we'll be using. We'll need a variable to check if we're still slaying, a variable to check if we hit the dragon, a variable to keep track of how much damage we've dealt the dragon this round, and a variable to keep track of total damage.
+Awesome! Now let's add in our while loop. We want to run the whole game as long as we're trying to kill the dragon—that is, while slaying is true.
 
-We'll be relying on random numbers to see if we hit the dragon and, if so, how much damage we did. JavaScript can generate random numbers like this:
+When checking variables like slaying that are set to true, you don't need to write something like:
 
-var randomNumber = Math.random();
+while(slaying === true)
 
-This creates a random number between 0 and 1. By multiplying the number and rounding it down, however, we can make it a random whole number! For example:
+You can just write
 
-Math.floor(Math.random() * 5 + 1);
+while(slaying)
 
-will generate a random number between 1 and 5, inclusive. (See the Hint if you're not quite sure how this works.)
+It also helps to give your variables names that make the code look more like regular English. while(slaying) { Do this } is easy to remember because it's so close to everyday speech!
 Instructions
 
-Declare and set the following variables:
-
-    slaying equal to true
-    youHit to a random number that's either 0 (which JavaScript reads as 'false') or 1 (which JavaScript reads as 'true')
-    damageThisRound to a random number between 1 and 5 (inclusive)
-    totalDamage to 0
+Create a while loop that only executes when slaying is true. For this exercise, set slaying to false in the body of the loop. (We want to make sure the loop can exit—no infinite loops for us!)
 
 
 */
@@ -30,3 +25,7 @@ var slaying=true;
 var youHit =1;
 var damageThisRound=Math.floor(Math.random()*5+1)
 var totalDamage=0
+
+while(slaying){
+    slaying =false;
+}
