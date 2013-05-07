@@ -1,10 +1,16 @@
-/*User Choice
+/*
+Computer Choice: Part 1
 
-We start by first asking the user which option they want to pick. We will later use this choice in the compare function to determine the winner.
+Awesome! We now need the computer to make a choice. The game is only going to be fun if the computer chooses randomly. Luckily JavaScript has something that can help with this.
+
+If we declare a variable and make it equal to Math.random(), that variable will equal a number between 0 and 1.
 Instructions
 
-    Declare a variable called userChoice.
-    Make the variable equal to the answer we get by asking the user "Do you choose rock, paper or scissors?"
+    Under your previous code, declare a variable called computerChoice and make it equal to Math.random().
+    Print out computerChoice so you can see how Math.random() works. This step isn't needed for the game - just useful for learning!
+
 
 */
 var userChoice= prompt("Do you choose rock,paper or scissors?")
+var computerChoice=Math.random()
+console.log(computerChoice)
