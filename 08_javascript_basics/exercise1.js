@@ -1,16 +1,16 @@
 /*
-What if choice1 is rock?
+What if choice1 is paper?
 
-You're doing great! Now we consider the other scenarios. Let's break the problem down a little. What if choice1 is "rock"? Given choice1 is "rock",
+Great job! Now we have to consider, what if choice1 is "paper". We already know the result if choice2 is also "paper". Where choice1 = choice2, the function returns "There is a tie!"
 
-a. if choice2 is "scissors", then "rock" wins.
-b. if choice2 is "paper", then "paper" wins.
+But what about the other two scenarios:
 
-How do we structure this? It's a bit different from what we have already seen. We will first have an if statement. And then the code inside that if statement will be... another if statement!
+a. if choice2 is "rock", then "paper" wins.
+b. if choice2 is "scissors", then "scissors" wins.
 Instructions
 
-    Under the existing code in the compare function, write an if statement where the condition is choice1 equals "rock".
-    In the code block for the if statement, write an if / else statement. In that statement, if choice2 is "scissors", return "rock wins". Otherwise, return "paper wins".
+    Under your existing code in the function body, use the same structure as in the previous exercise to add in these two extra scenarios.
+    This will involve first writing an if statement, and then putting an if / else statement inside that first if statement.
 
 
 
@@ -35,6 +35,16 @@ var compare = function(choice1,choice2){
         }
         else{
             return "paper wins";
+        }
+           
+    }
+    
+     if(choice2="rock"){
+        if(choice1="paper"){
+            return "paper wins";
+        }
+        else{
+            return "rock wins";
         }
            
     }
