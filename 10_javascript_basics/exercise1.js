@@ -1,21 +1,12 @@
 /*
+The first 'if' statement
 
-The 'while' loop
-
-Awesome! Now let's add in our while loop. We want to run the whole game as long as we're trying to kill the dragon—that is, while slaying is true.
-
-When checking variables like slaying that are set to true, you don't need to write something like:
-
-while(slaying === true)
-
-You can just write
-
-while(slaying)
-
-It also helps to give your variables names that make the code look more like regular English. while(slaying) { Do this } is easy to remember because it's so close to everyday speech!
+Great! Now we want to add a couple of branches to our program so it can handle different outcomes. You know what this means: if and else!
 Instructions
 
-Create a while loop that only executes when slaying is true. For this exercise, set slaying to false in the body of the loop. (We want to make sure the loop can exit—no infinite loops for us!)
+Inside your while loop, create an if/else statement that checks the value of youHit. If it's 1 (true), it should log a congratulatory message to the console, telling the user (s)he hit the dragon. If it's 0 (false), it should log a message to the console saying that the dragon defeated you.
+
+Either way, slaying should be set to false, since either you beat the dragon (and the slaying's over) or the dragon beat you!
 
 
 */
@@ -27,5 +18,11 @@ var damageThisRound=Math.floor(Math.random()*5+1)
 var totalDamage=0
 
 while(slaying){
+    if (youHit===1){
+        console.log( "You slayed the dragon")
+    }
+    else{
+        console.log( "the dragon eated you")
+    }
     slaying =false;
 }
