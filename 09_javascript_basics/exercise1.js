@@ -1,27 +1,18 @@
 /*
+Log it!
 
-First, you'll want to set your second loop's iterator to start at the first one, so it picks up where that one left off. If your first loop starts with
+Perfect! You've now got the engine of your search program running. It will:
 
-for(var i = 0; // rest of loop setup
-
-your second should be something like
-
-for(var j = i; // rest of loop setup
-
-Second, think hard about when your loop should stop. Check the Hint if you get stuck!
-
-Finally, in the body of your loop, have your program use the .push() method of hits. Just like strings and arrays have a .length method, arrays have a .push() method that adds the thing between parentheses to the end of the array. For example,
-
-newArray = [];
-newArray.push('hello');
-newArray[0] // equals 'hello'
+    Loop through the array,
+    Compare each letter to the first letter of your name, and if it sees that letter:
+    It will push that letter and all the letters that follow it to an array, stopping when the number of letters it pushes are equal to the number of letters in your name.
 
 Instructions
 
-Okay! Go ahead and add that second for loop inside the body of your if statement.
-
+Under your existing code (and outside all your loops!), set up an if/else statement. If you don't have any hits, log "Your name wasn't found!" to the console. Otherwise, log the hits array to the console.
 
 */
+
 
 /*jshint multistr:true */
 
@@ -35,4 +26,9 @@ for(var i=0; i<text.length ; i++){
     		hits.push(text[j]);
 		}
     }
+}
+if (hits.length === 0) {
+    console.log("Your name wasn't found!");
+} else {
+	console.log(hits);
 }
