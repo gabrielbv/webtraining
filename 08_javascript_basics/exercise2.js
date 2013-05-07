@@ -1,24 +1,27 @@
-/*Defining a function
+/*
+A function with two parameters
 
-In JavaScript a function can be defined by preceding a bunch of code with the word function followed by its inputs.
+Functions can have zero, one or more parameters. You can think of these as input that the function receives, and then uses to do something.
 
-The inputs are known as parameters and are enclosed with (). The associated code is enclosed with {}.
-
-In the editor you will see the beginnings of a definition for a cube function.
+The code example shows a trivial multiply function that takes two numbers as arguments and returns their product.
 Instructions
 
-Complete the cube function and use it to calculate the cube of 7. Use the square function as a reference on how to do this.
+Do you remember how volume is defined? Complete the definition of the volume function.
+
 */
 
 
-// Accepts a number x as input and returns its square
-var square = function(x) {
-    return x * x;
+
+
+
+var multiply = function (x, y) {
+    return x * y;
 };
 
-// Accepts a number x as input and returns its cube
-var cube = function(x) {
-    return x * x * x ;
+multiply(2, 5);
+
+var volume = function (w, l,k ) {
+    return w *l*k ;
 };
 
-cube(7);
+volume(2, 3, 4);
