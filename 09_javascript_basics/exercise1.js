@@ -1,37 +1,38 @@
 /*
 
-Your "if" statement
+First, you'll want to set your second loop's iterator to start at the first one, so it picks up where that one left off. If your first loop starts with
 
-Nice work! Now let's move on to the if statement.
+for(var i = 0; // rest of loop setup
 
-We'll want to place the if statement inside our for loop to make sure the program checks the if statement each time it moves forward through the loop. Essentially, the for loop is saying: "Hey program! Go through every letter in 'text'." The if statement will say: if you see something interesting, push that text into an array!"
+your second should be something like
 
-You can treat a string like an array of characters. For instance, you know that
+for(var j = i; // rest of loop setup
 
-var myArray = ['hello', 'world'];
-myArray[0]; // equals 'hello'
+Second, think hard about when your loop should stop. Check the Hint if you get stuck!
 
-But this also works on strings!
+Finally, in the body of your loop, have your program use the .push() method of hits. Just like strings and arrays have a .length method, arrays have a .push() method that adds the thing between parentheses to the end of the array. For example,
 
-var myName = 'Eric';
-myName[0] // equals 'E'
+newArray = [];
+newArray.push('hello');
+newArray[0] // equals 'hello'
 
-The new
 Instructions
 
-Add your if statement in the body of your for loop. It should check to see whether the current letter is equal to the first letter of your name. (Capitalization counts!)
-
-There's no need to put anything between the {}s of your if just yet.
+Okay! Go ahead and add that second for loop inside the body of your if statement.
 
 
 */
 
 /*jshint multistr:true */
 
-var text ="Gabi Gabi Gabi Gabi Gabi Gabi Gabi Gabi Gabi Gabi Gabi Gabi"
+text ="Gabi text Gabi text Gabi text Gabi text Gabi text Gabi Gabi"
 var myName="Gabi"
 var hits=[]
 
-for(i=0; i>text.length ; i++){
-    if(text[i]==='G'){}
+for(var i=0; i<text.length ; i++){
+    if(text[i] =='G'){
+        for(var j = i; j < (myName.length + i); j++) {
+    		hits.push(text[j]);
+		}
+    }
 }
