@@ -1,27 +1,22 @@
 /*
-A function with two parameters
+Parameter Names
 
-Functions can have zero, one or more parameters. You can think of these as input that the function receives, and then uses to do something.
+Just like in math, a function can take multiple arguments. When we define a function, we give each parameter a name. For example, I've named the cube function's single argument x.
 
-The code example shows a trivial multiply function that takes two numbers as arguments and returns their product.
+When you call a function, you don't need to know the parameter names. To show this, go ahead and change the name of the parameter in the cube function from x to n.
+
+Now of course that means that you have to change it everywhere it's used inside the function too. So you'll need to change line 3 to read return n * n * n; as well.
 Instructions
 
-Do you remember how volume is defined? Complete the definition of the volume function.
+Run the code after you've changed the parameter name to verify that the call cube(5) is not impacted at all by this change. It should still output the same result.
 
 */
 
-
-
-
-
-var multiply = function (x, y) {
-    return x * y;
+// Change the argument name from x to n
+var cube = function (n) {
+    return n * n * n;
 };
 
-multiply(2, 5);
-
-var volume = function (w, l,k ) {
-    return w *l*k ;
-};
-
-volume(2, 3, 4);
+// When you call cube with the new argument name,
+// it should still return the same result.
+cube(5);
