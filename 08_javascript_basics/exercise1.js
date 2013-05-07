@@ -1,15 +1,16 @@
 /*
-Both choices are the same!
+What if choice1 is rock?
 
-Now comes the fun part! We need to create a function. It will take two parameters (ie. the two choices made) and then return the winning choice.
+You're doing great! Now we consider the other scenarios. Let's break the problem down a little. What if choice1 is "rock"? Given choice1 is "rock",
 
-When programming a game like this, you have to first figure out all the various outcomes. One outcome is that the choice the user makes is equal to the choice the computer makes.
+a. if choice2 is "scissors", then "rock" wins.
+b. if choice2 is "paper", then "paper" wins.
+
+How do we structure this? It's a bit different from what we have already seen. We will first have an if statement. And then the code inside that if statement will be... another if statement!
 Instructions
 
-    We carried over the code from the previous section, but it is a comment. Leave it there for now.
-    Below the comment, declare a function called compare().
-    It takes two parameters, choice1 and choice2. There is a reason we don't use the variable names (userChoice/computerChoice) as the parameters! (Read the Hint for more.)
-    Inside the function, write an if statement such that if the two parameters equal each other, the function will return "The result is a tie!"
+    Under the existing code in the compare function, write an if statement where the condition is choice1 equals "rock".
+    In the code block for the if statement, write an if / else statement. In that statement, if choice2 is "scissors", return "rock wins". Otherwise, return "paper wins".
 
 
 
@@ -24,7 +25,19 @@ if (computerChoice < 0.34) {
 	computerChoice = "scissors";
 }*/
 var compare = function(choice1,choice2){
-if(choice1===choice2){
-    return "The result is a tie!"
+    if(choice1===choice2){
+        return "The result is a tie!"
+    
+    
+    if(choice1="rock"){
+        if(choice2="scissors"){
+            return "rock wins";
+        }
+        else{
+            return "paper wins";
+        }
+           
+    }
 }
+return compare
 }
