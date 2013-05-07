@@ -1,21 +1,17 @@
 /*
-What if choice1 is paper?
+What if choice1 is scissors?
 
-Great job! Now we have to consider, what if choice1 is "paper". We already know the result if choice2 is also "paper". Where choice1 = choice2, the function returns "There is a tie!"
+Almost there! Last, we consider what if choice1 is "scissors". In this case:
 
-But what about the other two scenarios:
-
-a. if choice2 is "rock", then "paper" wins.
-b. if choice2 is "scissors", then "scissors" wins.
+a. if choice2 is "rock", then "rock" wins.
+b. if choice2 is "paper", then "scissors" wins.
 Instructions
 
-    Under your existing code in the function body, use the same structure as in the previous exercise to add in these two extra scenarios.
-    This will involve first writing an if statement, and then putting an if / else statement inside that first if statement.
-
-
-
+    Under your old code, use the same structure as the past two exercises and finish off your function.
+    Call your function and pass in userChoice and computerChoice as your two parameter values.
+    
 */
-/*var userChoice = prompt("Do you choose rock, paper or scissors?");
+var userChoice = prompt("Do you choose rock, paper or scissors?");
 var computerChoice = Math.random();
 if (computerChoice < 0.34) {
 	computerChoice = "rock";
@@ -23,7 +19,7 @@ if (computerChoice < 0.34) {
 	computerChoice = "paper";
 } else {
 	computerChoice = "scissors";
-}*/
+}
 var compare = function(choice1,choice2){
     if(choice1===choice2){
         return "The result is a tie!"
@@ -48,6 +44,15 @@ var compare = function(choice1,choice2){
         }
            
     }
+     if(choice1="scissors"){
+        if(choice1="rock"){
+            return "rock wins";
+        }
+        else{
+            return "scissors wins";
+        }
+           
+    }
 }
-return compare
+return compare(userChoice,computerChoice)
 }
