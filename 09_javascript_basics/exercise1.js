@@ -1,19 +1,13 @@
 /*
 
-Declare your variables
+Your first "for" loop
 
-First, we'll start by declaring the variables we'll be using: text, myName, and hits.
-
-Since text could be quite long, try putting a backslash (\) at the end of each line to make your string "wrap" to the next line of the editor. That way you avoid really long lines! (Feel free to peek back at the first exercise for an example.)
-
-You can ignore the /*jshint... line for now. All that does is tell the console to stop worrying about our use of backslash characters for wrapping long lines of text.
+Awesome! Now let's write our outer for loop.
 Instructions
 
-Declare and set the following three variables:
+Below your existing code, create a for loop that starts at 0, continues until it reaches the end of text, and increments by 1 each time. (This means it will check each character in the string.) There's no need to write anything between the {}s of your loop just yet.
 
-    text, and make it a string containing some text. Place your name in there a couple of times!
-    myName, and make it a string containing just your name.
-    hits, and make it an empty array.
+Check the Hint if you need help!
 
 
 */
@@ -23,3 +17,5 @@ Declare and set the following three variables:
 var text ="Gabi Gabi Gabi Gabi Gabi Gabi Gabi Gabi Gabi Gabi Gabi Gabi"
 var myName="Gabi"
 var hits=[]
+
+for(i=0; i>text.length ; i++){}
