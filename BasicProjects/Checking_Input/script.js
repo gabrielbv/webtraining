@@ -1,22 +1,28 @@
 /*
-isNaN()
+Finishing the If / Else If / Else Statement
 
-Great work! If you tried a few non-numeric inputs, though, you probably noticed what JavaScript returned: NaN.
-
-NaN stands for "not a number" and is what JavaScript spits out when you give a non-number to parseInt(). As responsible JavaScript programmers, we should catch when a user enters a non-number and log an error message to the console.
-
-JavaScript has a built-in function, isNaN(), that returns true when you give it a value that's NaN and false otherwise. We'll use this to console.log() a message if the userAge ends up not being a number.
+Great work! Now let's round out our if statement.
 Instructions
 
-Set up an if statement in the editor. It should check if userAge isNaN(); if so, it should log a message to the console. (No need for an else statement just yet.)
+First, add an if else statement to check whether the user's age is within a certain range. You could check to see if their age is over 18, below 100, or equal to your age! It can be whatever you like, but it should result in logging a message to the console.
 
-Go ahead and provide a non-number as input in order to trigger your console.log()!
+Second, add an else statement that also logs a message to the console.
 
 */
 
 // Write your code below!
 var userAge=parseInt(prompt('What is your age?'),10);
 
-if(isNaN(userAge)){
+while(isNaN(userAge)){
     console.log("Please enter a number")
+    userAge=parseInt(prompt('What is your age?'),10);
+}
+if(userAge <=18){
+    console.log("You're too young")
+}
+else if(userAge===26){
+    console.log("That's nice")
+}
+else{
+    console.log("You're ok!")
 }
