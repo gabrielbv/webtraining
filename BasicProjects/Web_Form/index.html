@@ -1,21 +1,16 @@
-<!-- The Basic Form
+<!-- 
+Adding a &lttextarea&gt
 
-To begin, we'll need to use the HTML <form> element. Forms are used to pass information from your browser, also called the client, to the computer hosting the website you're using, also called the server. Whenever you submit a web form, it goes to a server for evaluation.
+Good work! Before we cover the additional <input> types, let's take a quick detour through the <textarea> element, which creates a resizable text box in which we can allow the user to write a longer message.
 
-Form elements contain <input> elements, which can be of several types. The first type we'll look at is the text input; its syntax looks like this:
+Since <textarea> is its own element, we can add it to a page like this:
 
-<form>
-<input type='text' name='hi' value='Hi'>
-</form>
+<p>Type your response:</p><br/>
+<textarea></textarea>
 
-Note that unlike the vast majority of HTML elements, <input> tags do not get closed; there are no </input> tags.
-
-The above would create a form field that accepts text, is called "hi", and would have "Hi" already listed as the default phrase (that is, the text box wouldn't be empty, just like we had "first name" and "last name" pre-populated in the last exercise).
-
-In future projects, we'll see how JavaScript can use the name attribute to target individual input fields.
 Instructions
 
-Add a <form> element to index.html, and include two <input>s inside it. Both <input>s should be of type="text". You can give them whatever names and default values you like!
+Add a <textarea> to your HTML page.
 
  -->
 <!DOCTYPE html>
@@ -29,6 +24,8 @@ Add a <form> element to index.html, and include two <input>s inside it. Both <in
          <input type ='text' name ="Greeting" value ='Hi'></input>
          <input type ='text' name ='Question' value ='How are you?'></input>
 	</form>
+    <p>Type your response:</p><br/>
+    <textarea></textarea>
         
 	</body>
 </html>
