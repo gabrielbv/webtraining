@@ -1,0 +1,14 @@
+p{
+    border:4px black;
+    background-color:blue;
+    border-radius: 5px;
+    position:relative;
+    width:235px
+    
+}
+input{
+    border:4px black;
+    background-color:green;
+    border-radius:5px;
+    width:235px
+}
