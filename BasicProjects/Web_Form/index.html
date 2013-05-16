@@ -1,19 +1,23 @@
 <!-- 
 
-Radio Buttons
 
-Perfect! You can already see your form coming together: with two <input> fields and a <textarea>, we could easily imagine a setup where users could post comments with their first name, last name, and the text of their message.
+Checkboxes
 
-Speaking of <input>s, another handy type is the radio button, which is that round button you might see on websites that ask for you to select a single input from several choices, such as "yes" or "no," your sex, or your year in college. Radio buttons are <input> tags of type='radio'.
+Excellent. What about non-exclusive options, though? For instance, what if we have a list of five options and we want the user to pick all that apply?
 
-To add a label to your radio buttons, you can simply add the text after the <input> tag, like so:
+For this, we can use the <input> of type='checkbox'>. This creates a little square checkbox that the user can check off.
 
-<input type='radio'>Yes
-<input type='radio'>No
+In addition to names and values, checkboxes can have a default "checked" behavior that makes the box automatically checked when the user loads the page. You can use it like this:
+
+<p>Pizza toppings</p>
+<p>(Check all that apply)</p>
+<input type='checkbox' checked>Cheese
+<input type='checkbox'>Mushrooms
+<input type='checkbox'>Pepperoni
 
 Instructions
 
-Between your <form></form> tags, add two radio buttons. You don't need to give them name or value attributes, but you certainly can if you'd like to practice. Go ahead and give them whatever labels you like!
+Go ahead and add two checkboxes between your <form></form> tags. Make at least one checked by default!
 
 
  -->
@@ -25,11 +29,14 @@ Between your <form></form> tags, add two radio buttons. You don't need to give t
 	<body>
     <form>
     
-         <input type ='text' name ="Greeting" value ='Hi'>
-         <input type ='text' name ='Question' value ='How are you?'>
-         <input type ='text' name ='sex' value='What sex are you'>
+         <input type ='text' name ="Greeting" value ='Hi'><br/>
+         <input type ='text' name ='Question' value ='How are you?'><br/>
+         <input type ='text' name ='sex' value='What sex are you'><br/>
          <input type='radio'>Male
-         <input type='radio'>Not Male
+         <input type='radio'>Not Male<br/?>
+         <input type='text' name ='Question2' value ="Do you consider yourself ugly?"><br/>
+         <input type='checkbox' checked>Yes
+         <input type='checkbox'>Maybe
 	</form>
     <p>Type your response:</p><br/>
     <textarea></textarea>
