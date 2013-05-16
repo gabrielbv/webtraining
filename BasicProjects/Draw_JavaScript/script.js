@@ -1,22 +1,39 @@
-/*The Nakedness Beneath jQuery
+/*
 
-If you've done any of the jQuery exercises, you know how how a JavaScript library can manipulate HTML elements. But we can—and will!—manipulate the <canvas> element directly with JavaScript. No jQuery needed!
+Lines and Arcs
 
-As with jQuery, we can use JavaScript to grab onto HTML elements through the document object, which represents (as you might have guessed) the HTML document. JavaScript has a built-in method, .getElementById(), that we can call on document in order to get a particular ID.
+Great! Now we're ready to start drawing on our canvas.
 
-We'll also need to get the proper context for our drawing; in this case, it will be two-dimensional. We can do this by creating a context variable and setting it equal to:
+You can draw lines with .moveTo() and .lineTo(). You can imagine the first method as moving your pen into position, and the second as telling your pen how far to draw the line.
 
-my_canvas.getContext("2d");
+You might draw a horizontal line with
 
-This will get us all set up to draw.
+context.moveTo(20, 20);
+context.lineTo(100, 20);
 
-We've provided the HTML and CSS for you; you're in charge of the JavaScript!
+You can draw arcs (curves) with .arc(). You could try
+
+context.beginPath();
+context.arc(75,75,35,0,Math.PI);
+context.stroke();
+
+to draw a semicircle.
+
+Let's try drawing an arc!
 Instructions
 
-Create a variable, my_canvas, and set it equal to the result of calling .getElementById() on document. You should pass your canvas' ID of 'canvas' as an input to your method.
+On three separate lines:
 
-(If you've done jQuery coursework, note that you don't need a "#" in 'canvas', since .getElementById() already assumes it's getting an ID.)
+    Call .beginPath() on context to let the canvas know you want to define a path.
+    Call .arc() on context with whichever elements you like. (We think the ones listed above make a nice arc.) This determines the shape of your path.
+    Finally, call .stroke() on context to tell the canvas you want to draw the path you've just defined, then click Save & Submit Code.
+
+
 */
 
 var my_canvas=document.getElementById("canvas");
 var context = my_canvas.getContext("2d");
+
+context.beginPath();
+context.arc();
+context.stroke();
