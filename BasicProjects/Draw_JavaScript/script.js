@@ -1,39 +1,25 @@
 /*
+Drawing a Circle
 
-Lines and Arcs
+We saw how to draw a semicircle in the last exercise. By going all the way around to 2π, we can draw an entire circle!
 
-Great! Now we're ready to start drawing on our canvas.
+The code looks something like this:
 
-You can draw lines with .moveTo() and .lineTo(). You can imagine the first method as moving your pen into position, and the second as telling your pen how far to draw the line.
+context.arc(95, 85, 40, 0, 2*Math.PI);
 
-You might draw a horizontal line with
+Remember, the order of arguments is:
 
-context.moveTo(20, 20);
-context.lineTo(100, 20);
+.arc(x, y, radius, startAngle, endAngle)
 
-You can draw arcs (curves) with .arc(). You could try
-
-context.beginPath();
-context.arc(75,75,35,0,Math.PI);
-context.stroke();
-
-to draw a semicircle.
-
-Let's try drawing an arc!
+where x is how far over to the right you start, y is how far down you start, radius is the radius of the circle, startAngle is the beginning angle, and endAngle is the ending angle. A circle goes from the angles 0 to 2 * Math.PI.
 Instructions
 
-On three separate lines:
-
-    Call .beginPath() on context to let the canvas know you want to define a path.
-    Call .arc() on context with whichever elements you like. (We think the ones listed above make a nice arc.) This determines the shape of your path.
-    Finally, call .stroke() on context to tell the canvas you want to draw the path you've just defined, then click Save & Submit Code.
-
+Update your .arc() to draw a circle in the editor. It can be any size you want!
 
 */
-
 var my_canvas=document.getElementById("canvas");
 var context = my_canvas.getContext("2d");
 
 context.beginPath();
-context.arc();
+context.arc(80,75,40,0,2*Math.PI);
 context.stroke();
