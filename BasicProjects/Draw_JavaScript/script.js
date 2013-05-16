@@ -1,21 +1,23 @@
 /*
 
+Adding Text
 
-Using .fillStyle
+Perfect! Now let's add a little text to our picture.
 
-Great work! Things are shaping up nicely (pun super intended).
+We can set the font size and style with .font. For instance,
 
-We might want to create shapes with a little color, though; right now we only have outlines. In order to give a shape some color, we just type
+context.font = "30px Garamond";
 
-context.fillStyle = "color name";
+will make our font 30 pixels high and in the Garamond typeface.
 
-we can use hexadecimal color names, or simple strings like "blue" or "red."
+We can set actual text with .fillText(). For example, we could do this:
 
-Let's give our rectangle some color!
+context.fillText("Hello!",15,175);
+
+This will type "Hello!" and will put the upper left-hand corner of the text box 15 pixels in from the left and 175 pixels down.
 Instructions
 
-    Change your .strokeRect() call to a .fillRect() one. This lets the canvas know to expect a filled-in rectangle instead of an outline!
-    Somewhere above your .fillRect(), set the .fillStyle to your favorite color. (Note that any shape drawn after the .fillStyle will take on the color you define.)
+Go ahead and use context.font and context.fillText() to add some text to your image. It can be whatever you like!
 
 
 */
@@ -25,5 +27,7 @@ var context = my_canvas.getContext("2d");
 context.beginPath();
 context.arc(80,75,40,0,2*Math.PI);
 context.stroke();
+context.font="30px Garamond";
+context.fillText("Hello!",20,122)
 context.fillStyle="blue"
 context.fillRect(10, 10, 50, 20);
