@@ -2,6 +2,7 @@ div{
     width: 100px;
     height: 50px;
     border: 4px solid black;
-    background-color:green;
-    font:Times;
+    background-color: green;
+    font: Times;
+    box-shadow: 10px 15px 22px #685
     }
