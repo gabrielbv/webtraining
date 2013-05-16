@@ -1,17 +1,22 @@
 /*
 
-Drawing a Rectangle
 
-Perfect! See how easy this is?
+Using .fillStyle
 
-You can draw squares and rectangles using the .strokeRect() method, which takes four arguments: how far in from the left to put the upper-left corner of the rectangle, how for down to put the upper-left corner of the rectangle, the width of the rectangle, and the height. An example might be:
+Great work! Things are shaping up nicely (pun super intended).
 
-context.strokeRect(10, 10, 50, 20);
+We might want to create shapes with a little color, though; right now we only have outlines. In order to give a shape some color, we just type
 
-You don't need to define any paths for rectangles; the above line of code alone will do the trick!
+context.fillStyle = "color name";
+
+we can use hexadecimal color names, or simple strings like "blue" or "red."
+
+Let's give our rectangle some color!
 Instructions
 
-Go ahead and draw your own rectangle.
+    Change your .strokeRect() call to a .fillRect() one. This lets the canvas know to expect a filled-in rectangle instead of an outline!
+    Somewhere above your .fillRect(), set the .fillStyle to your favorite color. (Note that any shape drawn after the .fillStyle will take on the color you define.)
+
 
 */
 var my_canvas=document.getElementById("canvas");
@@ -20,4 +25,5 @@ var context = my_canvas.getContext("2d");
 context.beginPath();
 context.arc(80,75,40,0,2*Math.PI);
 context.stroke();
-context.strokeRect(10, 10, 50, 20);
+context.fillStyle="blue"
+context.fillRect(10, 10, 50, 20);
